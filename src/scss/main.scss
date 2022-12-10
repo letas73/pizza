@@ -1,0 +1,144 @@
+.app {
+  padding: 40px;
+  background-color: #FFDF8C;
+}
+
+.content {
+  padding-top: 40px;
+  padding-left: 67px;
+  padding-right: 48px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.products {
+
+  &__title {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 700;
+    font-size: 32px; 
+    letter-spacing: 0.01em;
+    
+    margin-bottom: 35px;
+  }
+}
+
+.cart {
+  max-width: 830px;
+  margin: 0 auto;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+
+    &-icon {
+      margin-right: 17px;
+    }
+
+    &-text {
+      font-weight: 700;
+      font-size: 32px;  
+      letter-spacing: 0.01em;
+    }
+  }
+
+  &__clear {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      .cart__clear-text {
+        color: #9f9f9f;
+      }
+    }
+
+    &-icon {
+      margin-right: 7px;
+    }
+
+    &-text {
+      color: #B6B6B6;
+    }
+  }
+
+  &__list {
+    margin-bottom: 40px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__quantity {
+    font-size: 22px;
+    letter-spacing: 0.01em;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__totalprice {
+    font-size: 22px;
+    letter-spacing: 0.01em;
+
+    span {
+      font-weight: 700;
+      color: #FE5F1E;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px 33px;
+      text-align: center;
+
+      border: 1px solid #D3D3D3;
+      border-radius: 30px;
+
+      &-arrow {
+        margin-right: 10px;
+      }
+
+      &-text {
+        color: #CACACA;
+      }
+    }
+
+    &-order {
+      font-weight: 700;
+      color: #fff;
+
+      padding: 18px 37px;
+      background-color: #FE5F1E;
+      border-radius: 30px;
+      transition: background-color .2s ease-in-out;
+
+      &:hover {
+        transition: background-color .2s ease-in-out;
+        background-color: #f17c4d;
+      }
+    }
+  }
+}

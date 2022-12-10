@@ -1,0 +1,31 @@
+.categories {
+  display: flex;
+
+  li {
+    margin-right: 9px;
+    padding: 15px 26px;
+
+    font-weight: 700;
+    letter-spacing: 0.015em;
+    text-align: center;
+    color: #2C2C2C;
+
+    background-color: #F9F9F9;
+    border-radius: 30px;
+    transition: background-color .2s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active {
+      background-color: #282828;
+      color: #fff;
+      transition: background-color .2s ease-in-out;
+    }
+  }
+}
